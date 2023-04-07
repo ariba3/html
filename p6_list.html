@@ -1,49 +1,66 @@
-<h1>list</h1>
-
-<h3>list item</h3>
- 
-container tag :
-<h4>unordered list</h4>
-<li>alu vorta</li>
-<li>sutki vorta</li>
-
-
-<p>-------------------</p>
-<p>should be written like this</p>
-<P>unordered list</P>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>list</h1>
+    <h3>unordered, <br>ordered,<br>description list</h3>
+    <h4><mark>container tag : ul, ol, li  </mark>
+    </h4>
+<h3>unordered list</h3>
 <ul>
     <li>rice
-        <ul>
+        <ul> <!--sub list-->
             <li>white rice</li>
             <li>brown rice</li>
         </ul>
     </li>
-    <li>oil</li>
+    <li>oil
+        <ul>
+            <li>mustard</li>
+            <li>olive oil</li>
+        </ul>
+    </li>
     <li>potato</li>
 </ul>
 
 
 <p>-------------------</p>
-<h4>ordered list</h4>
-<ol>
-    <li>pencil</li>
-    <li>pen</li>
+<h4>ordered list</h4> 
+<ol> <!--by default ol 1,2,3-->
+    <li>pencil
+        <ol type="i"><!--sub list-->
+            <li>regular</li>
+            <li>mechanic</li>
+        </ol>
+    </li>
+    <li>pen
+        <ol type="a">
+            <li>matador</li>
+            <li>good luck</li>
+            <li>matador all time</li>
+        </ol>
+    </li>
     <li>notebook
-        <ol>
+        <ol type="I">
             <li>spiral</li>
             <li>normal</li>
         </ol>
     </li>
 </ol>
 
-<p>div is a container tag, overall jinis ta k </p>
-<div>
-    <h3>this is my blog</h3>
-    <p>hello guys today we going to visit.....</p>
-</div>
+<H3>Description list</H3>
+<!--we need dt & dd-->
+<!--dd add description/definition to dt -->
+<!--dt = description term & dd= definition, -->
+<dt>UL</dt>
+<dd>ul is a unordered or unorganized list</dd>
+<dt>css</dt>
+<dd>css add style to html</dd>
 
-
-
-
-
-
+</body>
+</html>
