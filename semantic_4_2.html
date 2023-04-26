@@ -4,24 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/st1_nav.css">
     <title>Semantic</title>
-    <style>
+    <!-- <style>
         .text{
             background-color: red;
             width: auto;
         }
-    </style>
+    </style> -->
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>website</li>
-                <li>blog</li>
-            </ul>
-        </nav>
-        <h2>welcome to my personal blog </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, suscipit.</p>
+  <header>
+    <nav>
+      <ul>
+            <li>
+                <a href="form4_3.html">Form</a>
+                <ul class="dropdown">
+                    <li><a href="p6_list.html" target="_blank">go to list</a></li>
+                    <li><a href="blog.html">your blog</a> </li>
+               </ul>
+            </li>
+            <li>
+              <a href="blog.html">blog</a>
+                <ul class="dropdown">
+                  <li>
+                        <a href="p6_list.html" target="_blank">go to list</a>
+                        <ul class="nest_test">
+                              <li><a href="p6_list.html" target="_blank">blog setting</a></li>
+                              <li><a href="blog.html">blog rating </a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">your blog</a> </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+      <h2>welcome to my personal blog </h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, suscipit.</p>
 
     </header> 
     
@@ -34,8 +53,8 @@
                 <h4>photos</h4>
                 <nav>
                     <ul>
-                        <li>tour pic</li>
-                        <li>camera</li>
+                      <li>tour pic</li>
+                      <li>camera</li>
                     </ul>
                 </nav>
             </div>

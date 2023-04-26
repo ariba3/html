@@ -1,0 +1,57 @@
+.text{
+  background-color: rgb(226, 97, 97);
+  width: 90px;
+}
+/* > dewar mane holo immediate parent ar child ta flex (ak line a asbe)
+nav ul mne ul ar sov flex  */
+nav > ul{ 
+  /* parent class a flex */
+  display: flex;
+}
+nav li{
+  list-style: none;
+  margin-right: 10px;
+  padding: 0 2px;
+}
+ nav li:hover{
+  background-color: lightgray;
+/* padding akan a dile bari mare lol just run it*/
+/* padding: 0 2px; */
+ }
+nav li a{
+  text-decoration: none;
+  color: black;
+}
+
+/* dropdown */
+/* nested */
+/* nav ar vitore li ar dropdown a */
+nav li .dropdown{
+  /* kichu display korbe na */
+  display: none;
+  position: absolute;
+  background-color: lightcoral;
+  padding-left: 0;
+}
+/* nav ar vitore j li ase 
+tar upor jodi dropdown tak a seta dekau(display: block;) 
+> only immediate child a*/
+nav li:hover > .dropdown{
+  display: block;
+}
+
+/* nested into nested different style & class name try */
+nav li .nest_test{
+  /* kichu display korbe na */
+  display: none;
+  position: absolute;
+  background-color: rgb(71, 71, 213);
+  padding-left: 15px;
+  width: 100px;
+}
+/* nav ar vitore j li ase 
+tar upor jodi dropdown tak a seta dekau(display: block;) 
+> only immediate child a*/
+nav li:hover > .nest_test{
+  display: block;
+}
